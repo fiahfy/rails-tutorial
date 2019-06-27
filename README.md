@@ -26,9 +26,20 @@ rails _5.1.6_ new hello_app
 # generate scaffold
 rails generate scaffold User name:string email:string
 
+# generate controller
+rails generate controller StaticPages home help
+
 # migrate database
 rails db:migrate
 
 # Run console
 rails console
 ```
+
+### Shortcut
+| Full command | Shortcut |
+----|---- 
+| `rails server` | `rails s` |  
+| `rails console` | `rails c` |  
+| `rails generate` | `rails g` |  
+| `rails test` | `rails t` |  
