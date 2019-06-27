@@ -25,15 +25,27 @@ rails _5.1.6_ new hello_app
 
 # generate scaffold
 rails generate scaffold User name:string email:string
-
-# generate controller
+rails generate model User name:string email:string
 rails generate controller StaticPages home help
+
+# destroy controller
+rails destroy model User
+rails destroy controller StaticPages home help
 
 # migrate database
 rails db:migrate
 
+# rollback database
+rails db:rollback
+
+# rollback to initial version
+rails db:migrate VERSION=0
+
 # Run console
 rails console
+
+# Run test
+rails test
 ```
 
 ### Shortcut
