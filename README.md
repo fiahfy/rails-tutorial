@@ -2,7 +2,6 @@
 ```
 $ brew install rbenv
 $ vi ~/.bashrc
-+ export PATH="$HOME/.rbenv/bin:$PATH"
 + eval "$(rbenv init -)"
 $ source ~/.bashrc
 ```
@@ -19,7 +18,17 @@ $ bundle install
 $ bundle exec rails -v
 ```
 
-## Create Hello App
+## Rails CLI
 ```
-bundle exec rails _5.1.6_ new hello_app
+# create new application
+rails _5.1.6_ new hello_app
+
+# generate scaffold
+rails generate scaffold User name:string email:string
+
+# migrate database
+rails db:migrate
+
+# Run console
+rails console
 ```
