@@ -37,6 +37,8 @@ rails destroy controller StaticPages home help
 
 # migrate database
 rails db:migrate
+# migrate database with environment
+rails db:migrate RAILS_ENV=production
 
 # rollback database
 rails db:rollback
@@ -44,17 +46,27 @@ rails db:rollback
 # rollback to initial version
 rails db:migrate VERSION=0
 
-# Run console
-rails console
-# Run console with sandbox mode
-rails console --sandbox
+# reset database
+rails db:migrate:reset
 
-# Run test
+# run console
+rails console
+# run console with sandbox mode
+rails console --sandbox
+# run console with environment
+rails console <env>
+
+# run test
 rails test
-# Run integration only test
+# run integration only test
 rails test:integration
-# Run model only test
+# run model only test
 rails test:models
+
+# run server
+rails server
+# run server with environment
+rails server --environment <env>
 ```
 
 ### Shortcut
