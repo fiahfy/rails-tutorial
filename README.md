@@ -23,12 +23,15 @@ $ bundle exec rails -v
 # create new application
 rails _5.1.6_ new hello_app
 
-# generate scaffold
+# generate
 rails generate scaffold User name:string email:string
 rails generate model User name:string email:string
 rails generate controller StaticPages home help
+rails generate integration_test site_layout
+rails generate migration add_index_to_users_email
+rails generate migration add_password_digest_to_users password_digest:string
 
-# destroy controller
+# destroy
 rails destroy model User
 rails destroy controller StaticPages home help
 
@@ -43,9 +46,15 @@ rails db:migrate VERSION=0
 
 # Run console
 rails console
+# Run console with sandbox mode
+rails console --sandbox
 
 # Run test
 rails test
+# Run integration only test
+rails test:integration
+# Run model only test
+rails test:models
 ```
 
 ### Shortcut
