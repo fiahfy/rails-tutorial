@@ -38,7 +38,7 @@ rails destroy controller StaticPages home help
 # migrate database
 rails db:migrate
 # migrate database with environment
-rails db:migrate RAILS_ENV=production
+rails db:migrate RAILS_ENV=<env>
 
 # rollback database
 rails db:rollback
@@ -62,11 +62,16 @@ rails test
 rails test:integration
 # run model only test
 rails test:models
+# run specific test
+rails test test/integration/users_login_test.rb
 
 # run server
 rails server
 # run server with environment
 rails server --environment <env>
+
+# show routes
+rails routes
 ```
 
 ### Shortcut
