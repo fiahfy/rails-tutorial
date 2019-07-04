@@ -49,6 +49,9 @@ rails db:migrate VERSION=0
 # reset database
 rails db:migrate:reset
 
+# create seed
+rails db:seed
+
 # run console
 rails console
 # run console with sandbox mode
