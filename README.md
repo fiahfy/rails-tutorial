@@ -27,6 +27,7 @@ rails _5.1.6_ new hello_app
 rails generate scaffold User name:string email:string
 rails generate model User name:string email:string
 rails generate controller StaticPages home help
+rails generate mailer UserMailer account_activation password_reset
 rails generate integration_test site_layout
 rails generate migration add_index_to_users_email
 rails generate migration add_password_digest_to_users password_digest:string
@@ -61,10 +62,12 @@ rails console <env>
 
 # run test
 rails test
-# run integration only test
+# run only integration test
 rails test:integration
-# run model only test
+# run only model test
 rails test:models
+# run only mailer test
+rails test:mailers
 # run specific test
 rails test test/integration/users_login_test.rb
 
