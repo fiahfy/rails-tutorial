@@ -28,6 +28,7 @@ rails generate scaffold User name:string email:string
 rails generate model User name:string email:string
 rails generate controller StaticPages home help
 rails generate mailer UserMailer account_activation password_reset
+rails generate uploader Picture
 rails generate integration_test site_layout
 rails generate migration add_index_to_users_email
 rails generate migration add_password_digest_to_users password_digest:string
