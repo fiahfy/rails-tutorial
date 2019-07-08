@@ -1,3 +1,7 @@
+# rails-tutorial
+> This sandbox project for [Ruby on Rails Tutorial](https://railstutorial.jp/).
+
+
 ## Install rbenv
 ```
 $ brew install rbenv
@@ -6,17 +10,20 @@ $ vi ~/.bashrc
 $ source ~/.bashrc
 ```
 
+
 ## Change ruby version
 ```
 $ rbenv install 2.6.3
 $ rbenv local 2.6.3
 ```
 
+
 ## Install rails 5.1.6
 ```
 $ bundle install
 $ bundle exec rails -v
 ```
+
 
 ## Rails CLI
 ```
