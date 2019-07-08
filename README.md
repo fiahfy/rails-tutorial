@@ -21,7 +21,7 @@ $ bundle exec rails -v
 ## Rails CLI
 ```
 # create new application
-rails _5.1.6_ new hello_app
+rails new hello_app
 
 # generate
 rails generate scaffold User name:string email:string
@@ -63,11 +63,11 @@ rails console <env>
 
 # run test
 rails test
-# run only integration test
+# run integration test only
 rails test:integration
-# run only model test
+# run model test only
 rails test:models
-# run only mailer test
+# run mailer test only
 rails test:mailers
 # run specific test
 rails test test/integration/users_login_test.rb
